@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+.home_title {
+  text-align: center;
+  font-size: larger;
+  letter-spacing: 5px;
+  color: #313d2f;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 535px) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 350px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
